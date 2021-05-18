@@ -16,10 +16,6 @@ Category.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    model: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
   },
   {
     sequelize,

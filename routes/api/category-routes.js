@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const sequelize = require('../../config/connection');
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
@@ -79,4 +78,5 @@ router.delete('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 module.exports = router;
